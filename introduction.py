@@ -49,7 +49,17 @@ print(a)
 a[:,2]=[1,2]
 print(a)
 
-#3D example
+#3D Array example
 
 b= np.array([[[1,2],[3,4]],[[5,6],[7,8]]])
+print(b)
+
+#Get specific element (work outside in)
+print(b[0,1,1])
+print(b[:,1,:])
+print(b[:,0,:])
+print(b[:,0,0])
+
+#Replace
+b[:,1,:] = [[9,9],[8,8]]
 print(b)
