@@ -56,5 +56,16 @@ z=np.zeros((3,3))
 z[1,1]=9
 print(z)
 #step4 - Add zeros matrix to ones matrix 
-output[1:4,1:4]=z #output[1st row to 3rd Row,1st column to 3 column]
+#output[1:4,1:4]=z #output[1st row to 3rd Row,1st column to 3 column]
+output[1:-1,1:-1]=z
 print(output)
+
+
+##### Be carefull about copying arrays
+
+a= np.array([1,2,3])
+#b=a #if we chage array of b values it effect a aslo , to overcome this issue np can one option copy,make a copy of a
+b =a.copy()
+b[0]=100
+print(a,b)
+
